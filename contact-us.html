@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us Page</title>
+        <meta charset="UTF-8.0">
+
+        <!-- This meta viewport with content specified to width=device-width and scaling allows the content to adjust according to the device width/browser size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+
+            .container  {
+                            width: 100%;
+                        }
+
+        header, footer, form {
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                    nav {
+                                float: left;
+                                padding: 1em;
+                                margin: 0;
+                                max-width: 150px;
+                        }
+                  
+                  nav ul{
+                                list-style-type: none;
+                                padding: 0;
+                        }
+                
+                article {
+                                margin-left: 150px;
+                                padding: 1em;
+                        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <!-- Semantics structural elements header, nav, article, section, footer are containers that could contain html elements within it according to the design requirement, easy to debug the code and improves the loading of the web pages -->
+        
+        <header>
+        <h1>I'm Contact Us</h1>
+        </header>
+            <nav>            
+                <ul>
+                    <li>
+                        <a href="education.html" target="_self" alt="link to education.html file"><h3>Qualification</h3></a>                    
+                     </li>
+                     <li>
+                        <a href="home.html" target="_self" alt="link to home.html file"><h3>Go back</h3></a>                    
+                    </li>
+                 </ul>            
+            </nav>
+
+        <section>
+             <article>
+                    <figure>
+                        <img src="contactus.jpg" width="600" height="300" alt="contactus.jpg image file">
+                            <figcaption>
+                                Contact Us image
+                            </figcaption>
+                    </figure>
+                <br />
+                 <form action="education.html" method="POST">
+                    <fieldset>
+                        <legend>Basic information</legend>
+                            <div>
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" name="firstName" placeholder="Please enter First Name" required />
+                            </div>
+                            <br />
+                            <div>
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" name="lastName" placeholder="Please enter Last Name" required />
+                            </div>
+                            <br />
+                                     <button type="submit">Submit</button>    
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+            <footer>
+                <h3>All rights reserved &copy; 2018</h3>
+            </footer>
+
+         </div>
+    
+    </body>
+</html>
